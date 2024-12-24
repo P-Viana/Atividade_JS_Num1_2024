@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino para a prova 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="formulariodentro">
+       <div id="titulo">
+           <h1>Sou um formulário!</h1>
+       </div>
+       <div id="ondeficaoform">
+            <form action="" id="formulario">
+                <div>
+                    Digite o seu nome:
+                    <input type="text" id="nome" oninput="pegarDados()"><br><br>
+                </div>
+                <div>
+                    Digite o seu endereço:
+                    <input type="text" id="endereco" oninput="pegarDados()"><br><br>
+                </div>
+                <div>
+                    Digite o seu CEP:
+                    <input type="text" id="cep" maxlength="10" placeholder="xx.xxx-xxx" oninput=mascara_cep()><br><br>
+                </div>
+                <div>
+                    Digite o seu CPF:
+                    <input type="text" id="cpf" maxlength="14" placeholder="xxx.xxx.xxx-xx" oninput=mascara_cpf()><br><br>
+                </div>
+                <div>
+                    Digite o seu telefone:
+                    <input type="tel" id="telefone" placeholder="(31)99999-9999" maxlength="14" oninput=mascara_telefone()><br><br>
+                </div>
+                <div>
+                    Digite o seu CNPJ:
+                    <input type="text" id="cnpj" placeholder="XX.XXX.XXX/0001-XX" maxlength="18" oninput=mascara_cnpj()><br><br>
+                </div>
+                <div>
+                    Digite o seu código:
+                    <input type="text" id="codigo" placeholder="xx_xx//xxx-xxx.9.xxx" maxlength="20" oninput=mascara_cod()><br>
+                </div>
+                <div>
+                    <a href="paginadeinformacoes.html">
+                        Enviar
+                    </a>
+                </div>
+            </form>
+       </div>
+    </div>
+    <footer>Favor não copiar este site. Ele é apenas um trabalho de escola. Obrigado!</footer>
+</body>
+</html>

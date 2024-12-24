@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#formulariodentro{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+#ondeficaoform{
+    grid-column: 2;
+    grid-row: 2 / 3;
+    padding: 10%;
+    height: 100vh;
+}
+#titulo{
+    grid-column: 1 / 5;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(105, 104, 104);
+    color: white;
+    padding: 2%;
+}
+#formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10%;
+    padding: 5%;
+    font-size: 1.2em;
+    border: solid 2px;
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+}
+#formulario:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+}
+span:hover{
+    font-size: 1.2em;
+    color: rgb(52, 52, 223);
+}
+a:hover{
+    font-size: 1.5em;
+    color: red;
+    stroke: solid 1px black;
+}
+#informacoessalvas{
+    grid-column: 2;
+    grid-row: 2 / 3;
+    padding: 10%;
+    height: 100vh;
+}
+footer{
+    height: 10vh;
+    background-color: rgb(105, 104, 104);
+    padding: 2%;
+    text-align: center;
+    color: white;
+}
